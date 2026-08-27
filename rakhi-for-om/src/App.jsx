@@ -85,10 +85,10 @@ function App() {
             </div>
 
             <div className="photos">
-              <img src="/photos/photo1.jpeg" alt="Memory 1" />
-              <img src="/photos/photo2.jpeg" alt="Memory 2" />
-              <img src="/photos/photo3.jpeg" alt="Memory 3" />
-              <img src="/photos/photo4.jpeg" alt="Memory 4" />
+              <<img src="/rakhi-for-om/photos/photo1.jpeg" alt="Memory 1" />
+<img src="/rakhi-for-om/photos/photo2.jpeg" alt="Memory 2" />
+<img src="/rakhi-for-om/photos/photo3.jpeg" alt="Memory 3" />
+<img src="/rakhi-for-om/photos/photo4.jpeg" alt="Memory 4" />
             </div>
 
             <div className="final-heart">
