@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff4f7;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-card {
+  width: 90%;
+  max-width: 500px;
+  padding: 55px 30px;
+  text-align: center;
+  background: #fffdf8;
+  border-radius: 35px;
+  box-shadow: 0 15px 40px rgba(150, 100, 120, 0.15);
+  position: relative;
+  z-index: 2;
+}
+
+.rakhi {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.small-text {
+  font-size: 20px;
+  color: #9b7180;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  color: #70485a;
+  margin: 10px 0 20px;
+}
+
+.subtitle {
+  color: #9b7b88;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+button {
+  border: none;
+  padding: 15px 32px;
+  border-radius: 50px;
+  background: #f3a6bd;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.sparkle {
+  position: absolute;
+  color: #e9a6bd;
+  font-size: 35px;
+}
+
+.sparkle1 {
+  top: 15%;
+  left: 15%;
+}
+
+.sparkle2 {
+  top: 25%;
+  right: 15%;
+}
+
+.sparkle3 {
+  bottom: 18%;
+  left: 20%;
+}
+
+/* LETTER */
+
+.letter {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.letter-rakhi {
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+.letter h2 {
+  color: #70485a;
+  font-size: 30px;
+  margin: 5px 0 25px;
+}
+
+.letter-text {
+  color: #80616e;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.letter-text p {
+  margin: 12px 0;
+}
+
+/* PHOTOS */
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.photos img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  padding: 7px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(100, 70, 90, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.photos img:nth-child(1) {
+  transform: rotate(-3deg);
+}
+
+.photos img:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+.photos img:nth-child(3) {
+  transform: rotate(2deg);
+}
+
+.photos img:nth-child(4) {
+  transform: rotate(-3deg);
+}
+
+.photos img:hover {
+  transform: scale(1.04) rotate(0deg);
+}
+
+.final-heart {
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .welcome-card {
+    width: 92%;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .letter h2 {
+    font-size: 26px;
+  }
+
+  .letter-text {
+    font-size: 15px;
+  }
+
+  .photos {
+    gap: 12px;
+  }
+
+  .photos img {
+    padding: 5px;
+  }
+}
+
+/* CUTE PAPER LETTER */
+
+.letter {
+  background: #fffaf0;
+  border-radius: 18px;
+  padding: 30px 22px;
+  position: relative;
+  box-shadow:
+    0 8px 20px rgba(120, 80, 100, 0.12),
+    inset 0 0 25px rgba(220, 180, 150, 0.08);
+}
+
+/* little decorative tape */
+
+.letter::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 85px;
+  height: 25px;
+  background: #f5c6d6;
+  opacity: 0.75;
+  border-radius: 4px;
+}
+
+/* tiny scrapbook decorations */
+
+.letter::after {
+  content: "✦  ♡  ✦";
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  color: #e8a7bc;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+.letter-rakhi {
+  margin-top: 5px;
+}
+
+.letter h2 {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #70485a;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.letter-text {
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 15px;
+  padding: 15px 12px;
+  margin-bottom: 30px;
+}
